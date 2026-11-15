@@ -59,4 +59,4 @@ Val_loss dla L2 zawiera karę za wagi, więc nie porównuję go wprost z resztą
 
 ## 5. Propozycja usprawnienia
 
-W regresji z callbackami dodałbym `min_delta=1e-4` do EarlyStopping albo zamiast ReduceLROnPlateau dał harmonogram CosineDecay. Wtedy trening skończyłby się po kilkudziesięciu epokach zamiast 200, a wynik byłby praktycznie taki sam (MAE 0.366 i 0.360 to prawie to samo). W klasyfikacji Fashion-MNIST większy zysk da zamiana MLP na sieć splotową, bo MLP nie widzi sąsiedztwa pikseli.
+W regresji z callbackami dodałbym `min_delta=1e-4` do EarlyStopping albo zamiast ReduceLROnPlateau dał harmonogram CosineDecay. Wtedy trening skończyłby się po kilkudziesięciu epokach zamiast 200, a wynik byłby praktycznie taki sam (MAE 0.366 i 0.360 to prawie to samo). W klasyfikacji Fashion-MNIST większy zysk da zamiana MLP na sieć splotową, bo MLP nie widzi sąsiedztwa pikseli. W L4 prosta CNN doszła na tych samych danych do 0.910.
